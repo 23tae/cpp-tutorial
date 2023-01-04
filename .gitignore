@@ -1,0 +1,12 @@
+# Configuration files
+.vscode
+*.json
+.DS_Store
+.cache_exists
+*.dSYM
+
+# Executables
+*.out
+*.o
+*.obj
+*.a
