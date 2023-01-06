@@ -10,4 +10,5 @@ int main() {
 
   std::cout << arr[0] << arr[1] << arr[2] << std::endl;
   return 0;
+
 }
