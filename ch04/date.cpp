@@ -92,8 +92,8 @@ int	main() {
 
 	date.SetDate(2020, 2, 27);
 	date.AddDay(2);
-	date.AddMonth(11);
-	date.AddYear(1);
+	date.AddMonth(0);
+	date.AddYear(0);
 
 	date.ShowDate();
 	return 0;
