@@ -11,7 +11,7 @@ int main() {
 
   print(a);
   print(b);
-  print(c);
+  // print(c); // ambiguous overloading
 
   return 0;
 }
