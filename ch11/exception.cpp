@@ -6,60 +6,60 @@ int IncreaseNumber(int n)
 
 {
 
-	if (n < 0)
+    if (n < 0)
 
-		throw n;
+        throw n;
 
-	else if (n == 0)
+    else if (n == 0)
 
-		throw "0은 입력할 수 없습니다.";
+        throw "0은 입력할 수 없습니다.";
 
-	return ++n;
+    return ++n;
 }
 
 int main(void)
 
 {
 
-	int num;
+    int num;
 
-	cout << "양의 정수를 하나 입력해주세요 : ";
+    cout << "양의 정수를 하나 입력해주세요 : ";
 
-	while (cin >> num)
+    while (cin >> num)
 
-	{
+    {
 
-		try
+        try
 
-		{
+        {
 
-			cout << "입력한 정수에서 1을 증가시킨 값 : " << IncreaseNumber(num) << endl;
-		}
+            cout << "입력한 정수에서 1을 증가시킨 값 : " << IncreaseNumber(num) << endl;
+        }
 
-		catch (int input)
+        catch (int input)
 
-		{
+        {
 
-			cout << input << "은 양의 정수가 아닙니다." << endl;
+            cout << input << "은 양의 정수가 아닙니다." << endl;
 
-			cout << "양의 정수를 다시 입력해주세요 : ";
+            cout << "양의 정수를 다시 입력해주세요 : ";
 
-			continue;
-		}
+            continue;
+        }
 
-		catch (const char *st)
+        catch (const char *st)
 
-		{
+        {
 
-			cout << st << endl;
+            cout << st << endl;
 
-			cout << "양의 정수를 다시 입력해주세요 : ";
+            cout << "양의 정수를 다시 입력해주세요 : ";
 
-			continue;
-		}
+            continue;
+        }
 
-		break;
-	}
+        break;
+    }
 
-	return 0;
+    return 0;
 }
